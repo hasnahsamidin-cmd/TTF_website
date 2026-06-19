@@ -10,8 +10,15 @@
 *.pem
 *.p12
 *.pfx
+*.crt
+*.cert
+*.token
 secrets.*
 credentials.*
+*.secret
+
+# Netlify
+.netlify/
 
 # Editor
 .vscode/
