@@ -1,0 +1,26 @@
+# Netlify deploy configuration — The Tenth Floor (static site)
+# Site files live at the repo root; there is no build step.
+
+[build]
+  publish = "."
+  command = ""
+
+# Security headers — Netlify can set these at the edge (GitHub Pages could not).
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Long-lived caching for static media (uniquely named, rarely change).
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/Route_Sim_July_12.mp4"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
