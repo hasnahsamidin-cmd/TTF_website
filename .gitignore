@@ -31,5 +31,9 @@ credentials.*
 Screenshot*.png
 Screen Shot*.png
 
+# Large video master — deploy the web-optimised Route_Sim_July_12.mp4 instead.
+# Kept locally as the high-res source, not shipped to the repo / GitHub Pages.
+Route_Sim_July_12.mov
+
 # Node (if ever added)
 node_modules/

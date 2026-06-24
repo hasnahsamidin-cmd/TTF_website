@@ -774,14 +774,6 @@ h2 + .editorial { margin-top: var(--s-4); }
   max-width: 130px;
   width: auto;
   object-fit: contain;
-  filter: grayscale(100%) brightness(0.4);
-  opacity: 0.72;
-  transition: filter 240ms ease, opacity 240ms ease;
-}
-
-.strip__grid img:hover {
-  filter: grayscale(0%) brightness(1);
-  opacity: 1;
 }
 
 .strip__grid img.is-asbl { mix-blend-mode: multiply; }
@@ -1723,4 +1715,13 @@ h2 + .editorial { margin-top: var(--s-4); }
   .editorial-img--wide { height: 200px; }
   .editorial-img--medium { height: 200px; }
   .editorial-pair { grid-template-columns: 1fr; }
+}
+
+/* Deborah Goldingham: full grayscale + zoomed/cropped to match Taru's headshot framing.
+   Source is a wide full-body shot, so scale in on the face (origin = face centre). */
+.leader-photo img[alt="Deborah Goldingham"],
+.leader-photo img[alt="Deborah Goldingham"]:hover {
+  filter: grayscale(100%) contrast(1.04);
+  transform-origin: 50% 22%;
+  transform: translateY(6%) scale(1.66);
 }
