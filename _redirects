@@ -1,0 +1,16 @@
+# Forward old flat-file URLs to the new folder URLs (preserves links & SEO).
+/method.html            /method/             301
+/work.html              /work/               301
+/team.html              /team/               301
+/who-we-work-with.html  /who-we-work-with/   301
+/data-security.html     /data-security/      301
+/contact.html           /contact/            301
+/opinions.html          /opinions/           301
+
+# Preserved from the previous Next.js site (old URLs -> homepage).
+/About              /  301
+/About/*            /  301
+/Company            /  301
+/Company/*          /  301
+/DataTraining       /  301
+/DataTraining/*     /  301
