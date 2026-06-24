@@ -20,11 +20,16 @@ credentials.*
 # Netlify
 .netlify/
 
-# Editor
+# Editor / tooling
 .vscode/
 .idea/
+.claude/
 *.swp
 *.swo
+
+# Stray macOS screenshots
+Screenshot*.png
+Screen Shot*.png
 
 # Node (if ever added)
 node_modules/

@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Team — The Tenth Floor</title>
+  <title>Team | The Tenth Floor</title>
   <meta name="description" content="Two senior leaders run every engagement. Subhendu Mukherjee, Founder and Director. Hasnah Mohamed Samidin, Analyst and Director.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&family=Barlow+Condensed:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
 /* ============================================================
-   The Tenth Floor — Site Stylesheet
-   v1.0 — May 2026
+   The Tenth Floor: Site Stylesheet
+   v1.0, May 2026
    Brand system locked from TTF_Design_Reference.html
    ============================================================ */
 
@@ -1664,6 +1664,15 @@ h2 + .editorial { margin-top: var(--s-4); }
   filter: grayscale(0%) contrast(1);
 }
 
+/* Deborah Goldingham: full grayscale + zoomed/cropped to match Taru's headshot framing.
+   Source is a wide full-body shot, so scale in on the face (origin = face centre). */
+.leader-photo img[alt="Deborah Goldingham"],
+.leader-photo img[alt="Deborah Goldingham"]:hover {
+  filter: grayscale(100%) contrast(1.04);
+  transform-origin: 50% 22%;
+  transform: translateY(6%) scale(1.66);
+}
+
 @media (max-width: 900px) {
   .leader-photo {
     max-width: 160px;
@@ -1770,10 +1779,10 @@ h2 + .editorial { margin-top: var(--s-4); }
     </div>
 
     <div class="editorial-img editorial-img--medium reveal mt-5">
-      <img src="../assets/img/editorial_corp01_bnp_strip.jpg"
-           alt="Subhendu Mukherjee facilitating a data strategy workshop — BNP Paribas"
+      <img loading="lazy" decoding="async" src="../assets/img/editorial_corp01_bnp_strip.jpg"
+           alt="Subhendu Mukherjee facilitating a data strategy workshop, BNP Paribas"
            loading="lazy">
-      <div class="editorial-img__caption">BNP Paribas &mdash; data strategy programme &mdash; Singapore</div>
+      <div class="editorial-img__caption">BNP Paribas, data strategy programme, Singapore</div>
     </div>
 
     <div style="display:flex;flex-direction:column;gap:var(--s-4);margin-top:var(--s-5)">
@@ -1841,16 +1850,16 @@ h2 + .editorial { margin-top: var(--s-4); }
   <div class="wrap">
     <div class="editorial-pair reveal">
       <div class="editorial-img editorial-img--medium">
-        <img src="../assets/img/editorial_corp03_sc_jardines_strip.jpg"
-             alt="Standard Chartered leadership cohort at Hyper Island — Hong Kong"
+        <img loading="lazy" decoding="async" src="../assets/img/editorial_corp03_sc_jardines_strip.jpg"
+             alt="Standard Chartered leadership cohort at Hyper Island, Hong Kong"
              loading="lazy">
-        <div class="editorial-img__caption">Standard Chartered &middot; Hyper Island &mdash; Hong Kong &nbsp;&bull;&nbsp; Jardines &middot; Hyper Island &mdash; Singapore</div>
+        <div class="editorial-img__caption">Standard Chartered &middot; Hyper Island, Hong Kong &nbsp;&bull;&nbsp; Jardines &middot; Hyper Island, Singapore</div>
       </div>
       <div class="editorial-img editorial-img--medium">
-        <img src="../assets/img/editorial_corp02_workshops_strip.jpg"
+        <img loading="lazy" decoding="async" src="../assets/img/editorial_corp02_workshops_strip.jpg"
              alt="Intel data capability programme cohort"
              loading="lazy">
-        <div class="editorial-img__caption">Bayer Japan &middot; Civil Service College &middot; Suntec Singapore &mdash; workshops across Asia</div>
+        <div class="editorial-img__caption">Bayer Japan &middot; Civil Service College &middot; Suntec Singapore, workshops across Asia</div>
       </div>
     </div>
   </div>
@@ -1881,13 +1890,30 @@ h2 + .editorial { margin-top: var(--s-4); }
         <div class="leader-card__content">
           <div class="leader-card__name">Taru Jain</div>
           <div class="leader-card__role">Consulting Advisor &middot; Singapore</div>
-          <p class="leader-card__bio">28 years across marketing strategy and digital transformation &mdash; 17 in senior corporate roles at WPP, Publicis, and Interpublic; 11 as entrepreneur and educator. Founder &amp; CEO of Maxential, which has trained 15,000+ executives at 80+ blue-chip organisations across 45 countries. Adjunct Faculty at Singapore Management University&rsquo;s Lee Kong Chian School of Business MBA programme (Dean&rsquo;s Honour List, 2018); also at Rutgers University and Duke Corporate Education. Active angel investor in Web3, analytics, and marketing technology.</p>
+          <p class="leader-card__bio">28 years across marketing strategy and digital transformation: 17 in senior corporate roles at WPP, Publicis, and Interpublic; 11 as entrepreneur and educator. Founder &amp; CEO of Maxential, which has trained 15,000+ executives at 80+ blue-chip organisations across 45 countries. Adjunct Faculty at Singapore Management University&rsquo;s Lee Kong Chian School of Business MBA programme (Dean&rsquo;s Honour List, 2018); also at Rutgers University and Duke Corporate Education. Active angel investor in Web3, analytics, and marketing technology.</p>
           <div class="leader-card__credentials">
             <span class="credential">SMU</span>
             <span class="credential">Rutgers University</span>
             <span class="credential">Duke Corporate Education</span>
             <span class="credential">Maxential</span>
             <span class="credential">Web3</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="leader-card--with-photo">
+        <div class="leader-photo">
+          <img src="../assets/img/Debbie%20June%20profile%20shot.jpeg" alt="Deborah Goldingham" loading="lazy">
+        </div>
+        <div class="leader-card__content">
+          <div class="leader-card__name">Deborah Goldingham</div>
+          <div class="leader-card__role">Consulting Advisor &middot; Sydney</div>
+          <p class="leader-card__bio">35 years across commercial marketing, brand and demand generation (American Express, Visa, Mastercard, AWS, and PageGroup), leading marketing across 37 markets as Regional Head, APAC. A commercial thinker with a track record of impact on both the bottom line and the communities she operates in. Named a Top 50 CMO and one of Asia&rsquo;s Top 50 most influential leaders in media, and chosen as Chief Judge for APPIES 2018 and IAA B2B APAC Advisory Board member. Deborah has won 21 industry awards recognising excellence in advertising, marketing, media, and communications, including the Institute of Advertising&rsquo;s APPIES Awards, a Silver Stevies Business Award, and Smarties Best in Asia for social and mobile marketing.</p>
+          <div class="leader-card__credentials">
+            <span class="credential">PageGroup</span>
+            <span class="credential">Mastercard</span>
+            <span class="credential">IAA B2B Advisory Board</span>
+            <span class="credential">Fintech</span>
           </div>
         </div>
       </div>
@@ -1909,7 +1935,7 @@ h2 + .editorial { margin-top: var(--s-4); }
   </div>
 </footer>
 <script>
-/* The Tenth Floor — Site JS. Vanilla, no dependencies. */
+/* The Tenth Floor: Site JS. Vanilla, no dependencies. */
 
 (function () {
   'use strict';

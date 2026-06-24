@@ -1,4 +1,4 @@
-/* The Tenth Floor — Site JS. Vanilla, no dependencies. */
+/* The Tenth Floor: Site JS. Vanilla, no dependencies. */
 
 (function () {
   'use strict';

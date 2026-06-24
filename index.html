@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Tenth Floor — When the Playbook Stops Paying Back</title>
+  <title>The Tenth Floor: When the Playbook Stops Paying Back</title>
   <meta name="description" content="The Tenth Floor is an investigative strategy consultancy. Two senior leaders, ten years of live engagements through structural disruption, evidence-based decisions instead of inherited playbooks.">
-  <meta property="og:title" content="The Tenth Floor — When the Playbook Stops Paying Back">
+  <meta property="og:title" content="The Tenth Floor: When the Playbook Stops Paying Back">
   <meta property="og:description" content="Investigative strategy. Two senior leaders. A decade of live engagements through disruption.">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,8 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&family=Barlow+Condensed:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
 /* ============================================================
-   The Tenth Floor — Site Stylesheet
-   v1.0 — May 2026
+   The Tenth Floor: Site Stylesheet
+   v1.0, May 2026
    Brand system locked from TTF_Design_Reference.html
    ============================================================ */
 
@@ -1667,6 +1667,15 @@ h2 + .editorial { margin-top: var(--s-4); }
   filter: grayscale(0%) contrast(1);
 }
 
+/* Deborah Goldingham: full grayscale + zoomed/cropped to match Taru's headshot framing.
+   Source is a wide full-body shot, so scale in on the face (origin = face centre). */
+.leader-photo img[alt="Deborah Goldingham"],
+.leader-photo img[alt="Deborah Goldingham"]:hover {
+  filter: grayscale(100%) contrast(1.04);
+  transform-origin: 50% 22%;
+  transform: translateY(6%) scale(1.66);
+}
+
 @media (max-width: 900px) {
   .leader-photo {
     max-width: 160px;
@@ -1740,7 +1749,7 @@ h2 + .editorial { margin-top: var(--s-4); }
 
 <nav class="nav" aria-label="Primary">
   <div class="nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="The Tenth Floor — home">
+    <a href="index.html" class="nav__logo" aria-label="The Tenth Floor, home">
       <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/ttf-logo-purple-final.png" alt="The Tenth Floor">
     </a>
     <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -1840,13 +1849,13 @@ h2 + .editorial { margin-top: var(--s-4); }
     </div>
     <div class="wrap" style="margin-top:var(--s-4)">
       <div class="editorial-img editorial-img--wide reveal">
-        <img src="assets/img/editorial_corp04_hk_intel_strip.jpg" alt="The Tenth Floor leadership programme — Hong Kong" loading="lazy">
-        <div class="editorial-img__caption">Hyper Island &middot; Jardines &middot; KFC &middot; Intel &middot; IMDA &mdash; Hong Kong &amp; Singapore</div>
+        <img src="assets/img/editorial_corp04_hk_intel_strip.jpg" alt="The Tenth Floor leadership programme, Hong Kong" loading="lazy">
+        <div class="editorial-img__caption">Hyper Island &middot; Jardines &middot; KFC &middot; Intel &middot; IMDA, Hong Kong &amp; Singapore</div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Bridge — expanded standalone section ============ -->
+  <!-- ===== Bridge: expanded standalone section ============ -->
 <section class="bridge-section">
   <div class="bridge-section__inner">
     <div class="bridge-section__headline reveal">The Investigative Approach Is Not a Philosophy. It Is a Structured Method.</div>
@@ -1930,19 +1939,19 @@ h2 + .editorial { margin-top: var(--s-4); }
 
     <div class="cases reveal">
       <a href="work/index.html#mastercard" class="case-card">
-        <div class="case-card__logo"><img src="https://ik.imagekit.io/ztdjsu12hs/TTF/mastercard.png" alt="Mastercard"></div>
+        <div class="case-card__logo"><img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/mastercard.png" alt="Mastercard"></div>
         <div class="case-card__meta">Financial Services / Singapore</div>
         <div class="case-card__title">The insight was in public data the whole time.</div>
         <div class="case-card__outcome">Five-year exclusive partnership with SMRT. <strong>Cross-border transaction volume up materially.</strong> Covered by Bloomberg.</div>
       </a>
       <a href="work/index.html#hilton" class="case-card">
-        <div class="case-card__logo"><img src="https://ik.imagekit.io/ztdjsu12hs/TTF/hilton.png" alt="Hilton"></div>
+        <div class="case-card__logo"><img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/hilton.png" alt="Hilton"></div>
         <div class="case-card__meta">Hospitality / Australia &amp; Japan</div>
         <div class="case-card__title">When the market resets, don&rsquo;t reduce price. Re-read the market.</div>
         <div class="case-card__outcome"><strong>Bookings up 17%.</strong> No advertising spend. No price reductions. Premium positioning held throughout.</div>
       </a>
       <a href="work/index.html#frasers" class="case-card">
-        <div class="case-card__logo"><img src="https://ik.imagekit.io/ztdjsu12hs/TTF/Frasers.png" alt="Frasers Property"></div>
+        <div class="case-card__logo"><img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/Frasers.png" alt="Frasers Property"></div>
         <div class="case-card__meta">Retail / Singapore</div>
         <div class="case-card__title">Measurement strategy must precede analysis.</div>
         <div class="case-card__outcome"><strong>Footfall up 150%.</strong> Operating model shifted from intuition-based tenancy management to evidence-based optimisation.</div>
@@ -1959,39 +1968,40 @@ h2 + .editorial { margin-top: var(--s-4); }
   <div class="strip__inner">
     <div class="strip__label eyebrow reveal">Trusted by</div>
     <div class="strip__grid reveal">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/Civil_Service_College_Singapore.png" alt="Civil Service College Singapore">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/IIT%20KGP%20Logo.png" alt="IIT Kharagpur">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/ocbc.png" alt="OCBC">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/mastercard.png" alt="Mastercard">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/nestle.png" alt="Nestle">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/hilton.png" alt="Hilton">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/Frasers.png" alt="Frasers Property">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/great%20eastern.png" alt="Great Eastern" style="max-height:56px;max-width:160px">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/axiata.png" alt="XL Axiata">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/ASBL.jpg" alt="ASBL" class="is-asbl">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/hsbc.png" alt="HSBC">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/pfizer.png" alt="Pfizer / Haleon">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/singapore_zoo.png" alt="Singapore Zoo">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/standard_chartered.png" alt="Standard Chartered">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/unilever.png" alt="Unilever">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/intel.png" alt="Intel">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/bnp_paribas.png" alt="BNP Paribas">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/kimberly_clark.png" alt="Kimberly-Clark">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/grab.png" alt="Grab">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/temasek.png" alt="Temasek">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/bayer.png" alt="Bayer">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/national_gallery_singapore.png" alt="National Gallery Singapore">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/NTU%20SG%20logo.png" alt="NTU Singapore">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/SRM%20AP%20logo.png" alt="SRM AP">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/singtel.png" alt="Singtel">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/fonterra.png" alt="Fonterra">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/gsk.png" alt="GSK">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/johnson_and_johnson.png" alt="Johnson &amp; Johnson">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/design_singapore.png" alt="Design Singapore">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/ST_Telemedia_Logo.webp" alt="ST Telemedia">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/tuv_sud.png" alt="TÜV SÜD">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/FreshBus.png" alt="FreshBus">
-      <img src="https://ik.imagekit.io/ztdjsu12hs/TTF/michael-page.png" alt="Michael Page">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/Civil_Service_College_Singapore.png" alt="Civil Service College Singapore" style="max-height:47.5px;max-width:162.5px">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/IIT%20KGP%20Logo.png" alt="IIT Kharagpur" style="max-height:47.5px;max-width:162.5px">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/ocbc.png" alt="OCBC">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/mastercard.png" alt="Mastercard">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/nestle.png" alt="Nestle">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/hilton.png" alt="Hilton">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/Frasers.png" alt="Frasers Property">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/great%20eastern.png" alt="Great Eastern" style="max-height:56px;max-width:160px">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/axiata.png" alt="XL Axiata">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/ASBL.jpg" alt="ASBL" class="is-asbl">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/hsbc.png" alt="HSBC">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/pfizer.png" alt="Pfizer / Haleon">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/eu-yan-sang-logo.png" alt="Eu Yan Sang" style="max-height:47.5px;max-width:162.5px">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/singapore_zoo.png" alt="Singapore Zoo">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/standard_chartered.png" alt="Standard Chartered">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/unilever.png" alt="Unilever">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/intel.png" alt="Intel">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/bnp_paribas.png" alt="BNP Paribas">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/kimberly_clark.png" alt="Kimberly-Clark">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/grab.png" alt="Grab">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/temasek.png" alt="Temasek">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/bayer.png" alt="Bayer">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/national_gallery_singapore.png" alt="National Gallery Singapore">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/NTU%20SG%20logo.png" alt="NTU Singapore">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/SRM%20AP%20logo.png" alt="SRM AP">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/singtel.png" alt="Singtel">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/fonterra.png" alt="Fonterra">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/gsk.png" alt="GSK">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/johnson_and_johnson.png" alt="Johnson &amp; Johnson">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/design_singapore.png" alt="Design Singapore">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/ST_Telemedia_Logo.webp" alt="ST Telemedia">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/tuv_sud.png" alt="TÜV SÜD">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/FreshBus.png" alt="FreshBus">
+      <img loading="lazy" decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/michael-page.png" alt="Michael Page" style="max-height:43.7px;max-width:149.5px">
     </div>
   </div>
 </section>
@@ -2110,13 +2120,30 @@ h2 + .editorial { margin-top: var(--s-4); }
         <div class="leader-card__content">
           <div class="leader-card__name">Taru Jain</div>
           <div class="leader-card__role">Consulting Advisor &middot; Singapore</div>
-          <p class="leader-card__bio">28 years across marketing strategy and digital transformation &mdash; WPP, Publicis, and Interpublic; then Maxential, which has trained 15,000+ executives at 80+ organisations across 45 countries. Adjunct Faculty at SMU, Rutgers, and Duke Corporate Education. Angel investor in Web3, analytics, and marketing technology.</p>
+          <p class="leader-card__bio">28 years across marketing strategy and digital transformation: WPP, Publicis, and Interpublic; then Maxential, which has trained 15,000+ executives at 80+ organisations across 45 countries. Adjunct Faculty at SMU, Rutgers, and Duke Corporate Education. Angel investor in Web3, analytics, and marketing technology.</p>
           <div class="leader-card__credentials">
             <span class="credential">SMU</span>
             <span class="credential">Rutgers University</span>
             <span class="credential">Duke Corporate Education</span>
             <span class="credential">Maxential</span>
             <span class="credential">Web3</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="leader-card--with-photo">
+        <div class="leader-photo">
+          <img src="assets/img/Debbie%20June%20profile%20shot.jpeg" alt="Deborah Goldingham" loading="lazy">
+        </div>
+        <div class="leader-card__content">
+          <div class="leader-card__name">Deborah Goldingham</div>
+          <div class="leader-card__role">Consulting Advisor &middot; Sydney</div>
+          <p class="leader-card__bio">35 years across commercial marketing, brand and demand generation (American Express, Visa, Mastercard, AWS, and PageGroup), leading marketing across 37 markets as Regional Head, APAC. A commercial thinker with a track record of impact on both the bottom line and the communities she operates in. Named a Top 50 CMO and one of Asia&rsquo;s Top 50 most influential leaders in media, and chosen as Chief Judge for APPIES 2018 and IAA B2B APAC Advisory Board member. Deborah has won 21 industry awards recognising excellence in advertising, marketing, media, and communications, including the Institute of Advertising&rsquo;s APPIES Awards, a Silver Stevies Business Award, and Smarties Best in Asia for social and mobile marketing.</p>
+          <div class="leader-card__credentials">
+            <span class="credential">PageGroup</span>
+            <span class="credential">Mastercard</span>
+            <span class="credential">IAA B2B Advisory Board</span>
+            <span class="credential">Fintech</span>
           </div>
         </div>
       </div>
@@ -2231,7 +2258,7 @@ h2 + .editorial { margin-top: var(--s-4); }
 </footer>
 
 <script>
-/* The Tenth Floor — Site JS. Vanilla, no dependencies. */
+/* The Tenth Floor: Site JS. Vanilla, no dependencies. */
 
 (function () {
   'use strict';
