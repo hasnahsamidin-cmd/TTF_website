@@ -35,6 +35,8 @@
     box-shadow: var(--shadow-card);
   }
 
+  .opinion-card__img-link { display: block; }
+
   .opinion-card__img {
     width: 100%;
     aspect-ratio: 4 / 3;
@@ -237,23 +239,27 @@
 
       <!-- ── Card 1: Stand-up comedian ── -->
       <article class="opinion-card" id="card-comedian">
-        <div class="opinion-card__img">
-          <img decoding="async" src="../assets/img/standUp.jpg" alt="Illustration of a stand-up comedian at the microphone" loading="lazy">
-        </div>
+        <a href="stand-up-comedian.html" class="opinion-card__img-link" tabindex="-1" aria-hidden="true">
+          <div class="opinion-card__img">
+            <img decoding="async" src="../assets/img/standUp.jpg" alt="Illustration of a stand-up comedian at the microphone" loading="lazy">
+          </div>
+        </a>
         <div class="opinion-card__body">
           <div class="opinion-card__title">Want to know if your AI is lying to you? Ask a stand-up comedian.</div>
-          <button class="btn btn--primary" onclick="openArticle('article-comedian')">Read article</button>
+          <a href="stand-up-comedian.html" class="btn btn--primary">Read article</a>
         </div>
       </article>
 
       <!-- ── Card 2: Kimchi ── -->
       <article class="opinion-card" id="card-kimchi">
-        <div class="opinion-card__img">
-          <img decoding="async" src="../assets/img/grandmother.png" alt="Illustration of a Korean grandmother assessing kimchi" loading="lazy">
-        </div>
+        <a href="kimchi.html" class="opinion-card__img-link" tabindex="-1" aria-hidden="true">
+          <div class="opinion-card__img">
+            <img decoding="async" src="../assets/img/grandmother.png" alt="Illustration of a Korean grandmother assessing kimchi" loading="lazy">
+          </div>
+        </a>
         <div class="opinion-card__body">
           <div class="opinion-card__title">According to Kimchi, we are using AI backwards.</div>
-          <button class="btn btn--primary" onclick="openArticle('article-kimchi')">Read article</button>
+          <a href="kimchi.html" class="btn btn--primary">Read article</a>
         </div>
       </article>
 
@@ -261,338 +267,6 @@
 
   </div>
 </section>
-
-
-<!-- ===================================================== -->
-<!-- ── Article 1: Stand-up comedian ────────────────────── -->
-<!-- ===================================================== -->
-<div class="article-full" id="article-comedian">
-
-  <!-- Close bar at top -->
-  <div class="wrap" style="padding-top:var(--s-4);">
-    <div class="article-close-bar">
-      <button class="article-close-bar__back" onclick="closeArticle()">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-          <path d="M10 13L5 8l5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        Back to Opinions
-      </button>
-    </div>
-  </div>
-
-  <!-- Essay hero -->
-  <header class="page-head" style="padding-bottom:var(--s-7);">
-    <div class="page-head__inner">
-      <div class="essay-intro">
-
-        <!-- LEFT: text -->
-        <div class="essay-intro__text">
-          <div class="page-head__crumb">Essay &middot; The Tenth Floor</div>
-          <h2 class="display-xl" style="color:var(--ttf-white);margin-top:var(--s-2);">
-            Want to know if your AI is lying to you? Ask a stand-up comedian.
-          </h2>
-          <p style="margin-top:var(--s-4);font-family:var(--ui);font-size:clamp(16px,1.5vw,20px);font-weight:700;line-height:1.5;color:var(--ttf-white);max-width:44ch;">
-            Dave Chappelle walked away from $55 million because his data said everything was fine. It wasn&rsquo;t. A TTF story on the signal your AI will never surface, and what it&rsquo;s costing you.
-          </p>
-        </div>
-
-        <!-- RIGHT: illustration -->
-        <div>
-          <div class="essay-illustration">
-            <img decoding="async" src="../assets/img/standUp.jpg" alt="Illustration of a stand-up comedian at the microphone, by Rizal Adnan" loading="eager">
-          </div>
-          <p style="margin-top:var(--s-2);font-family:var(--ui);font-size:13px;font-style:italic;color:rgba(255,255,255,0.75);line-height:1.4;">Illustration by Rizal Adnan, a human cartoonist with decades of knowing what funny looks like.</p>
-        </div>
-
-      </div>
-    </div>
-  </header>
-
-  <!-- Essay body -->
-  <section class="section">
-    <div class="wrap">
-      <div class="essay-body">
-
-        <div class="essay-section">
-          <div class="eyebrow">01 &middot; The Data</div>
-          <div class="essay-section__heading">Every instrument said: stay.</div>
-          <div class="editorial mt-4">
-            <p>In 2005, Chappelle&rsquo;s Show was the most watched series in Comedy Central history. Dave Chappelle had just signed a new deal worth $55 million. Ratings historic. Audience enormous. Sentiment overwhelmingly positive.</p>
-            <p>By every available measure, he was winning. Stay. Scale. Cash in.</p>
-          </div>
-        </div>
-
-        <div class="essay-section">
-          <div class="eyebrow">02 &middot; The Moment</div>
-          <div class="essay-section__heading">The one laugh that was different.</div>
-          <div class="editorial mt-4">
-            <p>He was on set, performing a sketch designed to make people squirm at an uncomfortable truth: to hold up a mirror at something they&rsquo;d rather not see. Then a white crew member laughed.</p>
-            <p>Not louder than anyone else. Not at the wrong moment. Just different.</p>
-          </div>
-          <div class="essay-pull-quote">
-            &ldquo;I know the difference between people laughing with me and people laughing at me. It was the first time I&rsquo;d ever gotten a laugh that I was uncomfortable with.&rdquo;
-          </div>
-          <div class="editorial mt-4">
-            <p>He walked shortly after.</p>
-          </div>
-        </div>
-
-        <div class="essay-section">
-          <div class="eyebrow">03 &middot; The Signal</div>
-          <div class="essay-section__heading">The joke landed. In the opposite direction.</div>
-          <div class="editorial mt-4">
-            <p>The sketch was built to make people uncomfortable with a truth. But someone in that room walked away entertained by the very thing Chappelle was trying to challenge.</p>
-            <p>That crew member didn&rsquo;t see the mirror. They saw the show. The discomfort, the entire point, didn&rsquo;t reach them. They laughed past it.</p>
-            <p>The data saw them as identical. Same laugh. Same positive signal. Keep going.</p>
-            <p>One version of that laugh says: you got them. The other says: they got around you. No model can tell them apart.</p>
-            <p>But here is what makes this more than a data problem. That one wrong laugh was a brand authenticity alarm. Chappelle&rsquo;s work had a specific intention: to hold a mirror up at discomfort, not to entertain around it. That intention was his brand. The wrong laugh told him his mirror was being used as a window. His meaning was being consumed without being received. That is not a ratings problem. That is an identity problem. And it arrived, quietly, in a single laugh that looked identical to all the right ones.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="bridge-section">
-    <div class="bridge-section__inner">
-      <div class="bridge-section__headline"><em>&lsquo;The Average&rsquo;</em>&nbsp; Is the Enemy of Differentiation.</div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <div class="essay-body">
-
-        <div class="essay-section">
-          <div class="eyebrow">04 &middot; The AI Connection</div>
-          <div class="essay-section__heading">Your model cannot hear the difference.</div>
-          <div class="editorial mt-4">
-            <p>This is not a problem unique to comedy. It is the central problem of every business running AI-measured customer experience today.</p>
-            <p>AI aggregates. That is what it is built to do. It collects every signal in the room, finds the average, and reports that average as the truth. A roomful of right laughs plus one wrong laugh produces a single output: positive sentiment. The wrong laugh disappears. It does not lower the score. It does not trigger an alert. It is absorbed into the average and the dashboard stays green.</p>
-            <p>The room has already turned. The model hasn&rsquo;t noticed.</p>
-          </div>
-
-          <div class="stat-grid mt-5">
-            <div class="stat">
-              <div class="stat__value">26</div>
-              <div class="stat__label">For every customer who tells you something went wrong, 26 left without saying a word. Silent. Unrecorded. Averaged away. Source: Qualtrics Consumer Experience Trends Report, 2026.</div>
-            </div>
-            <div class="stat">
-              <div class="stat__value">$3T</div>
-              <div class="stat__label">In global annual sales at risk from experiences that never surface as a complaint: experiences that look, from the dashboard&rsquo;s perspective, exactly like satisfaction.</div>
-            </div>
-          </div>
-
-          <div class="editorial mt-5">
-            <p>That is the wrong laugh. At scale. Running quietly inside every business optimising for the average right now.</p>
-            <p>And here is the part that makes it dangerous: the drift is invisible precisely because the numbers stay strong. Ratings up. Revenue up. Sentiment positive. The model reports success at every stage of the erosion. You do not know the room has turned until the audience stops showing up. By then, the signal that would have told you is months or years in the past, averaged away, unrecoverable.</p>
-            <p>Chappelle heard it in real time. Standing in the room. Because he was there.</p>
-          </div>
-        </div>
-
-        <div class="essay-section">
-          <div class="eyebrow">05 &middot; The Drift</div>
-          <div class="essay-section__heading">Not a fall. A drift.</div>
-          <div class="editorial mt-4">
-            <p>Staying meant this: more episodes, more applause, $55 million in the bank, and the work slowly becoming something it was never meant to be.</p>
-            <p>Not through any bold decision. Just through following the data, optimising episode by episode for what got the biggest response, until the most distinctive voice in the room is drowned out by the noise of its own popularity.</p>
-            <p>And one day the show is popular in a way Chappelle never intended, indistinguishable from everything else.</p>
-            <p>This is the mechanism by which brand authenticity dies. Not by betrayal. By optimisation. Every individual decision is defensible. Every data point approves the next step. But each step is a small concession to the average: a slight softening of the edge, a slight broadening of the appeal, until what was specific becomes general, and what was yours belongs to everyone in the way that nothing does.</p>
-            <p>Authenticity is not a quality you build. It is a quality you protect. And you can only protect what you can hear. The one voice, the one laugh, is the earliest instrument. Long before any metric moves, it tells you whether the thing you made still means what you meant it to mean.</p>
-            <p>Not a fall. A drift. The most dangerous kind, because the dashboard never shows it coming.</p>
-          </div>
-        </div>
-
-        <div class="essay-section">
-          <div class="eyebrow">06 &middot; The Payoff</div>
-          <div class="essay-section__heading">He didn&rsquo;t lose $55 million. He deferred it.</div>
-          <div class="editorial mt-4">
-            <p>Headlines said Chappelle lost $55 million. He didn&rsquo;t.</p>
-            <p>Netflix signed him at $20 million per special. Five specials. $100 million (nearly double what he walked away from) on his own terms, with his voice intact.</p>
-            <p>Netflix didn&rsquo;t pay $100 million for the story of the walk-away. They paid for the comedian the walk-away protected. They paid for a voice that had stayed singular, refusing, at the moment of maximum pressure, to become the average of its audience.</p>
-            <p>That is what brand authenticity is worth in the market. Not as a value statement. As a valuation. The premium is real, and it accrues to the thing that remained itself when everything (the data, the money, the applause) said it didn&rsquo;t have to.</p>
-            <p>The data said stay. But the one wrong laugh said: your differentiation is at risk. That wrong laugh paid better.</p>
-          </div>
-        </div>
-
-        <div class="essay-section">
-          <div class="eyebrow">07 &middot; The Method</div>
-          <div class="essay-section__heading">Three disciplines. In the right order.</div>
-          <div class="editorial mt-4">
-            <p>The method is not a tool. It is a discipline, and it runs in sequence.</p>
-            <p><strong>First: name the signal before you deploy anything.</strong> Every brand has one thing (a tone, a tension, an intention) that defines it and that the average will always flatten. It is the thing your brand means when it is most itself. Write it down explicitly, before measurement begins. This is your calibration baseline. Without it, you cannot know what you&rsquo;re listening for, and no instrument, human or algorithmic, can tell you when you&rsquo;ve lost it.</p>
-            <p><strong>Second: put someone in the room who knows what right sounds like.</strong> Not a researcher running a survey. Not an analyst reading a dashboard. Someone who has heard your brand land correctly enough times that they know, in real time and in the room, when a response is off. That person is your primary instrument. AI is what you use after they&rsquo;ve heard something: to scale the response, surface the pattern, act faster. The sequence matters. Judgment before data, not after.</p>
-            <p><strong>Third: build your review cadence around drift, not decline.</strong> Decline shows up on the dashboard: revenue falls, sentiment drops, someone flags it. Drift doesn&rsquo;t. It arrives as a softening: the distinctive thing becoming slightly less distinct, the edge slightly more palatable, the audience slightly more general. Set a regular cadence that asks not &ldquo;are the numbers healthy?&rdquo; but &ldquo;are we still the thing we were built to be?&rdquo; Those are different questions, and only one of them protects what makes you worth choosing.</p>
-            <p>Chappelle ran this method instinctively, in a single moment, under $55 million of pressure. It returned $100 million and a body of work that no one else could have made. He was still the person who made it.</p>
-            <p>The question before your next deployment is not &ldquo;what should we measure?&rdquo; It is: &ldquo;what is the one thing we cannot afford to average?&rdquo; Name it first. Build everything else around that.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Close article button at bottom -->
-  <div class="wrap">
-    <div class="article-end-close">
-      <button class="btn btn--ghost btn--lg" onclick="closeArticle()">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" style="margin-right:4px;">
-          <path d="M10 13L5 8l5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        Close article
-      </button>
-    </div>
-  </div>
-
-</div><!-- /article-comedian -->
-
-
-<!-- ===================================================== -->
-<!-- ── Article 2: Kimchi ──────────────────────────────── -->
-<!-- ===================================================== -->
-<div class="article-full" id="article-kimchi">
-
-  <!-- Close bar at top -->
-  <div class="wrap" style="padding-top:var(--s-4);">
-    <div class="article-close-bar">
-      <button class="article-close-bar__back" onclick="closeArticle()">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-          <path d="M10 13L5 8l5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        Back to Opinions
-      </button>
-    </div>
-  </div>
-
-  <!-- Essay hero -->
-  <header class="page-head" style="padding-bottom:var(--s-7);">
-    <div class="page-head__inner">
-      <div class="essay-intro">
-
-        <!-- LEFT: text -->
-        <div class="essay-intro__text">
-          <div class="page-head__crumb">Essay &middot; The Tenth Floor</div>
-          <h2 class="display-xl" style="color:var(--ttf-white);margin-top:var(--s-2);">
-            According to Kimchi, we are using AI backwards.
-          </h2>
-          <p style="margin-top:var(--s-4);font-family:var(--ui);font-size:clamp(16px,1.5vw,20px);font-weight:700;line-height:1.5;color:var(--ttf-white);max-width:44ch;">
-            The researchers at the World Institute of Kimchi were not trying to make a point about AI adoption. They were trying to predict how kimchi tastes. But the model they built is an unusually clean illustration of where most organisations go wrong.
-          </p>
-        </div>
-
-        <!-- RIGHT: illustration -->
-        <div>
-          <div class="essay-illustration">
-            <img decoding="async" src="../assets/img/grandmother.png" alt="Illustration of a Korean grandmother assessing kimchi readiness, by Rizal Adnan" loading="eager">
-          </div>
-          <p style="margin-top:var(--s-2);font-family:var(--ui);font-size:13px;font-style:italic;color:rgba(255,255,255,0.75);line-height:1.4;">Illustration by Rizal Adnan, a human cartoonist with decades of knowing what funny looks like.</p>
-        </div>
-
-      </div>
-    </div>
-  </header>
-
-  <!-- Essay body -->
-  <section class="section">
-    <div class="wrap">
-      <div class="essay-body">
-
-        <div class="essay-section">
-          <div class="eyebrow">01 &middot; Begin with the question</div>
-          <div class="essay-section__heading">Ask first. Model later.</div>
-          <div class="editorial mt-4">
-            <p>Out of thousands of measurable variables inside a fermenting jar, the research team at the World Institute of Kimchi identified nine that actually matter. Together, those nine signals predict fermentation progress and flavour outcome with precision.</p>
-            <p>Choosing those nine was not a data task. It was a judgment call, made by people who understood kimchi before they understood machine learning. No algorithm helped them decide. They just had to know.</p>
-            <p>Now, this is where most organisations quietly lose the plot. They acquire the tool. They skip the question.</p>
-          </div>
-        </div>
-
-        <div class="essay-section">
-          <div class="eyebrow">02 &middot; Tacit knowledge</div>
-          <div class="essay-section__heading">What the model cannot smell.</div>
-          <div class="editorial mt-4">
-            <p>AI can report the acidity level at any stage of fermentation. But it cannot explain why this particular combination of bacteria, in this climate, with this cabbage, produces something that tastes the way it does.</p>
-            <p>A Korean grandmother assessing kimchi readiness does not take a reading. She smells, tastes, checks the texture. Holistic judgment built over decades, which the model is attempting to reconstruct, variable by variable, from the outside. It can approximate. It cannot replace. More importantly, it could not exist without her. Her knowledge had to come first.</p>
-            <p>Tacit knowledge is not a quaint alternative to data intelligence. It is the source material.</p>
-          </div>
-        </div>
-
-        <div class="essay-section">
-          <div class="eyebrow">03 &middot; The hierarchy</div>
-          <div class="essay-section__heading">AI serves the kimchi. Kimchi does not serve AI.</div>
-          <div class="editorial mt-4">
-            <p>The fermentation has non-negotiable requirements: time, temperature, microbial environment. The AI model was built around those requirements. The kimchi adapted to nothing.</p>
-            <p>This is not how most organisations deploy AI. They install the tool, then quietly reshape their questions to fit what it can answer. The output arrives promptly and looks convincing. And quite often, it is the right answer to a question nobody actually asked.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="bridge-section">
-    <div class="bridge-section__inner">
-      <div class="bridge-section__headline reveal">The Intelligence Was Never in the Volume. It Was in Knowing What to Leave Out.</div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <div class="essay-body">
-
-        <div class="essay-section">
-          <div class="eyebrow">04 &middot; Signal vs. noise</div>
-          <div class="essay-section__heading">Too many variables spoil the kimchi.</div>
-          <div class="editorial mt-4">
-            <p>The fermentation researchers generated thousands of data points and kept nine. Not because the rest was bad data, but because it told them nothing about the thing they were trying to understand.</p>
-          </div>
-
-          <!-- Diagram -->
-          <div class="editorial-img editorial-img--wide mt-5" style="border-radius:var(--r-lg);height:auto;">
-            <img decoding="async" src="../assets/img/signal-vs-noise.png" alt="Figure 01. Signal vs. Noise: thousands of variables inside a fermenting jar, distilled by human judgment to nine that matter. World Institute of Kimchi, Gwangju." loading="lazy" style="height:auto;border-radius:var(--r-lg);">
-          </div>
-
-          <div class="editorial mt-4">
-            <p>The intelligence was never in the volume. It was in knowing what to leave out. That comes from understanding your domain well enough to know what matters before you start measuring. It does not come bundled with the subscription.</p>
-          </div>
-        </div>
-
-        <div class="essay-section">
-          <div class="eyebrow">05 &middot; The benchmark</div>
-          <div class="essay-section__heading">What good looks like.</div>
-          <div class="editorial mt-4">
-            <p>The kimchi was ready when it was ready. The model helped someone who already understood the process confirm it faster. That is useful. That is also the limit.</p>
-            <p>And knowing the limit is what separates people who use AI well from people who use AI loudly.</p>
-          </div>
-        </div>
-
-        <div class="essay-section">
-          <div class="eyebrow">06 &middot; The method</div>
-          <div class="essay-section__heading">Mind before model.</div>
-          <div class="editorial mt-4">
-            <p>The kimchi researchers knew what they were looking for before they ran a single test. That is not a data skill. It is a thinking skill. And it is the one most AI adoption programmes skip.</p>
-            <p>At The Tenth Floor, we build that thinking with teams: how to form the right question, how to identify which signals actually matter, and how to interrogate what the model returns rather than simply accept it. Then how to use AI to amplify that judgment: to test a hypothesis faster, to surface patterns that would take months to find manually.</p>
-            <p>Our method is not theoretical. We have done this with clients across enough industries to know the thinking holds. In fact, call us, and we&rsquo;ll take you through the case studies. Just us, no grandmother present.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Close article button at bottom -->
-  <div class="wrap">
-    <div class="article-end-close">
-      <button class="btn btn--ghost btn--lg" onclick="closeArticle()">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" style="margin-right:4px;">
-          <path d="M10 13L5 8l5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        Close article
-      </button>
-    </div>
-  </div>
-
-</div><!-- /article-kimchi -->
 
 
 <!-- ===== CTA ============================================== -->
@@ -683,35 +357,7 @@
 
 })();
 
-/* ── Article open / close (global so onclick="" works) ── */
 
-function openArticle(articleId) {
-  /* Hide the grid section */
-  document.getElementById('opinions-index').style.display = 'none';
-
-  /* Show the article */
-  var article = document.getElementById(articleId);
-  if (article) {
-    article.classList.add('is-open');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-}
-
-function closeArticle() {
-  /* Hide all open articles */
-  document.querySelectorAll('.article-full.is-open').forEach(function (el) {
-    el.classList.remove('is-open');
-  });
-
-  /* Show the grid again */
-  document.getElementById('opinions-index').style.display = '';
-
-  /* Scroll back to grid */
-  var grid = document.getElementById('opinions-index');
-  if (grid) {
-    grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-}
 </script>
 </body>
 </html>

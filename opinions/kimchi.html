@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>According to Kimchi, we are using AI backwards. | The Tenth Floor</title>
+  <meta name="description" content="The researchers at the World Institute of Kimchi were not trying to make a point about AI adoption. They were trying to predict how kimchi tastes. But the model they built is an unusually clean illustration of where most organisations go wrong.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="The Tenth Floor">
+  <meta property="og:title" content="According to Kimchi, we are using AI backwards.">
+  <meta property="og:description" content="The researchers at the World Institute of Kimchi were not trying to make a point about AI adoption. They were trying to predict how kimchi tastes. But the model they built is an unusually clean illustration of where most organisations go wrong.">
+  <meta property="og:url" content="https://hasnahsamidin-cmd.github.io/TTF_website/opinions/kimchi.html">
+  <meta property="og:image" content="https://hasnahsamidin-cmd.github.io/TTF_website/assets/img/grandmother.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="900">
+  <meta property="article:author" content="The Tenth Floor">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="According to Kimchi, we are using AI backwards.">
+  <meta name="twitter:description" content="A Korean grandmother's fermentation judgment and nine data points: the unusually clean illustration of where most organisations go wrong with AI.">
+  <meta name="twitter:image" content="https://hasnahsamidin-cmd.github.io/TTF_website/assets/img/grandmother.png">
+
+  <link rel="canonical" href="https://hasnahsamidin-cmd.github.io/TTF_website/opinions/kimchi.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&family=Barlow+Condensed:wght@400;500;600;700;800&family=Barlow+Semi+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="https://ik.imagekit.io/ztdjsu12hs/TTF/ttf-logo-purple-final.png" type="image/png">
+
+  <style>
+
+  /* ── Essay layout ── */
+
+  .essay-intro {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: var(--s-5);
+    align-items: stretch;
+  }
+
+  .essay-intro__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--s-5) 0;
+  }
+
+  .essay-illustration {
+    overflow: hidden;
+    border-radius: var(--r-md);
+    min-height: 416px;
+  }
+
+  .essay-illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+
+  .essay-body { max-width: 720px; }
+
+  .essay-section {
+    padding-top: var(--s-5);
+    padding-bottom: var(--s-5);
+    border-top: 1px solid var(--ttf-line);
+  }
+
+  .essay-section__heading {
+    margin-top: var(--s-2);
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: clamp(22px, 2.8vw, 36px);
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--ttf-ink);
+    line-height: 1.05;
+  }
+
+  .essay-pull-quote {
+    margin-top: var(--s-4);
+    padding: var(--s-3) var(--s-4);
+    border-left: 3px solid var(--ttf-purple);
+    background: var(--ttf-soft);
+    border-radius: 0 var(--r-sm) var(--r-sm) 0;
+    font-family: var(--editorial);
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.58;
+    color: var(--ttf-deep-purple);
+  }
+
+  /* ── Back bar ── */
+
+  .article-back-bar {
+    display: flex;
+    align-items: center;
+    gap: var(--s-3);
+    padding: var(--s-3) 0;
+    margin-bottom: var(--s-3);
+    border-bottom: 1px solid var(--ttf-line);
+  }
+
+  .article-back-bar__link {
+    font-family: var(--ui);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ttf-quiet);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    transition: color 160ms ease;
+  }
+
+  .article-back-bar__link:hover { color: var(--ttf-purple); }
+
+  /* ── Share bar ── */
+
+  .share-strip {
+    padding: var(--s-5) 0 var(--s-3);
+  }
+
+  .share-bar {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-3);
+    background: var(--ttf-white);
+    border: 1px solid var(--ttf-line);
+    border-radius: 999px;
+    padding: 14px 28px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  }
+
+  .share-bar__label {
+    font-family: var(--ui);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--ttf-ink);
+    margin-right: var(--s-1);
+  }
+
+  .share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--ttf-ink);
+    padding: 4px;
+    transition: color 160ms ease, transform 120ms ease;
+    text-decoration: none;
+  }
+
+  .share-btn:hover {
+    color: var(--ttf-purple);
+    transform: translateY(-1px);
+  }
+
+  .share-btn.is-copied { color: #16a34a; }
+
+  .copy-toast {
+    display: none;
+    font-family: var(--ui);
+    font-size: 12px;
+    font-weight: 600;
+    color: #16a34a;
+    margin-left: 2px;
+  }
+
+  .copy-toast.is-visible { display: inline; }
+
+  @media (max-width: 860px) {
+    .essay-intro { grid-template-columns: 1fr; }
+    .essay-illustration { min-height: 260px; max-width: 320px; }
+  }
+
+  </style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<nav class="nav" aria-label="Primary">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__logo" aria-label="The Tenth Floor, home">
+      <img decoding="async" src="https://ik.imagekit.io/ztdjsu12hs/TTF/ttf-logo-purple-final.png" alt="The Tenth Floor">
+    </a>
+    <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links">
+      <li><a href="../method/index.html">Method</a></li>
+      <li><a href="../work/index.html">Work</a></li>
+      <li><a href="../team/index.html">Team</a></li>
+      <li><a href="../who-we-work-with/index.html">Who we work with</a></li>
+      <li><a href="../data-security/index.html">Data Security</a></li>
+      <li><a href="index.html" class="is-active">Opinions</a></li>
+    </ul>
+    <a href="https://calendar.app.google/p3SDpqn5yT21yfkJ6" target="_blank" rel="noopener" class="btn btn--primary nav__cta">Let&#39;s talk <span class="arrow">&rarr;</span></a>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- ===== Back to Opinions ================================= -->
+  <div class="wrap" style="padding-top:var(--s-4);">
+    <div class="article-back-bar">
+      <a href="index.html" class="article-back-bar__link">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M10 13L5 8l5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back to Opinions
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== Article hero ===================================== -->
+  <header class="page-head" style="padding-bottom:var(--s-7);">
+    <div class="page-head__inner">
+      <div class="essay-intro">
+
+        <div class="essay-intro__text">
+          <div class="page-head__crumb">Essay &middot; The Tenth Floor</div>
+          <h1 class="display-xl" style="color:var(--ttf-white);margin-top:var(--s-2);">
+            According to Kimchi, we are using AI backwards.
+          </h1>
+          <p style="margin-top:var(--s-4);font-family:var(--ui);font-size:clamp(16px,1.5vw,20px);font-weight:700;line-height:1.5;color:var(--ttf-white);max-width:44ch;">
+            The researchers at the World Institute of Kimchi were not trying to make a point about AI adoption. They were trying to predict how kimchi tastes. But the model they built is an unusually clean illustration of where most organisations go wrong.
+          </p>
+        </div>
+
+        <div>
+          <div class="essay-illustration">
+            <img decoding="async" src="../assets/img/grandmother.png" alt="Illustration of a Korean grandmother assessing kimchi readiness, by Rizal Adnan" loading="eager">
+          </div>
+          <p style="margin-top:var(--s-2);font-family:var(--ui);font-size:13px;font-style:italic;color:rgba(255,255,255,0.75);line-height:1.4;">Illustration by Rizal Adnan, a human cartoonist with decades of knowing what funny looks like.</p>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Essay body ======================================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="essay-body">
+
+        <div class="essay-section">
+          <div class="eyebrow">01 &middot; Begin with the question</div>
+          <div class="essay-section__heading">Ask first. Model later.</div>
+          <div class="editorial mt-4">
+            <p>Out of thousands of measurable variables inside a fermenting jar, the research team at the World Institute of Kimchi identified nine that actually matter. Together, those nine signals predict fermentation progress and flavour outcome with precision.</p>
+            <p>Choosing those nine was not a data task. It was a judgment call, made by people who understood kimchi before they understood machine learning. No algorithm helped them decide. They just had to know.</p>
+            <p>Now, this is where most organisations quietly lose the plot. They acquire the tool. They skip the question.</p>
+          </div>
+        </div>
+
+        <div class="essay-section">
+          <div class="eyebrow">02 &middot; Tacit knowledge</div>
+          <div class="essay-section__heading">What the model cannot smell.</div>
+          <div class="editorial mt-4">
+            <p>AI can report the acidity level at any stage of fermentation. But it cannot explain why this particular combination of bacteria, in this climate, with this cabbage, produces something that tastes the way it does.</p>
+            <p>A Korean grandmother assessing kimchi readiness does not take a reading. She smells, tastes, checks the texture. Holistic judgment built over decades, which the model is attempting to reconstruct, variable by variable, from the outside. It can approximate. It cannot replace. More importantly, it could not exist without her. Her knowledge had to come first.</p>
+            <p>Tacit knowledge is not a quaint alternative to data intelligence. It is the source material.</p>
+          </div>
+        </div>
+
+        <div class="essay-section">
+          <div class="eyebrow">03 &middot; The hierarchy</div>
+          <div class="essay-section__heading">AI serves the kimchi. Kimchi does not serve AI.</div>
+          <div class="editorial mt-4">
+            <p>The fermentation has non-negotiable requirements: time, temperature, microbial environment. The AI model was built around those requirements. The kimchi adapted to nothing.</p>
+            <p>This is not how most organisations deploy AI. They install the tool, then quietly reshape their questions to fit what it can answer. The output arrives promptly and looks convincing. And quite often, it is the right answer to a question nobody actually asked.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bridge-section">
+    <div class="bridge-section__inner">
+      <div class="bridge-section__headline">The Intelligence Was Never in the Volume. It Was in Knowing What to Leave Out.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="essay-body">
+
+        <div class="essay-section">
+          <div class="eyebrow">04 &middot; Signal vs. noise</div>
+          <div class="essay-section__heading">Too many variables spoil the kimchi.</div>
+          <div class="editorial mt-4">
+            <p>The fermentation researchers generated thousands of data points and kept nine. Not because the rest was bad data, but because it told them nothing about the thing they were trying to understand.</p>
+          </div>
+
+          <div class="editorial-img editorial-img--wide mt-5" style="border-radius:var(--r-lg);height:auto;">
+            <img decoding="async" src="../assets/img/signal-vs-noise.png" alt="Figure 01. Signal vs. Noise: thousands of variables inside a fermenting jar, distilled by human judgment to nine that matter. World Institute of Kimchi, Gwangju." loading="lazy" style="height:auto;border-radius:var(--r-lg);">
+          </div>
+
+          <div class="editorial mt-4">
+            <p>The intelligence was never in the volume. It was in knowing what to leave out. That comes from understanding your domain well enough to know what matters before you start measuring. It does not come bundled with the subscription.</p>
+          </div>
+        </div>
+
+        <div class="essay-section">
+          <div class="eyebrow">05 &middot; The benchmark</div>
+          <div class="essay-section__heading">What good looks like.</div>
+          <div class="editorial mt-4">
+            <p>The kimchi was ready when it was ready. The model helped someone who already understood the process confirm it faster. That is useful. That is also the limit.</p>
+            <p>And knowing the limit is what separates people who use AI well from people who use AI loudly.</p>
+          </div>
+        </div>
+
+        <div class="essay-section">
+          <div class="eyebrow">06 &middot; The method</div>
+          <div class="essay-section__heading">Mind before model.</div>
+          <div class="editorial mt-4">
+            <p>The kimchi researchers knew what they were looking for before they ran a single test. That is not a data skill. It is a thinking skill. And it is the one most AI adoption programmes skip.</p>
+            <p>At The Tenth Floor, we build that thinking with teams: how to form the right question, how to identify which signals actually matter, and how to interrogate what the model returns rather than simply accept it. Then how to use AI to amplify that judgment: to test a hypothesis faster, to surface patterns that would take months to find manually.</p>
+            <p>Our method is not theoretical. We have done this with clients across enough industries to know the thinking holds. In fact, call us, and we&rsquo;ll take you through the case studies. Just us, no grandmother present.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Share bar ======================================== -->
+  <div class="wrap">
+    <div class="share-strip">
+      <div class="share-bar">
+        <span class="share-bar__label">SHARE</span>
+
+        <!-- Email -->
+        <a class="share-btn"
+           href="mailto:?subject=According%20to%20Kimchi%2C%20we%20are%20using%20AI%20backwards.&body=I%20thought%20you%27d%20find%20this%20interesting%3A%20https%3A%2F%2Fthetenthfloor.com%2Fopinions%2Fkimchi.html"
+           aria-label="Share by email">
+          <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="1" y="1" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.7"/>
+            <path d="M1 4.5l10 6.5 10-6.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </a>
+
+        <!-- Copy link -->
+        <button class="share-btn" id="copy-link-btn" onclick="copyArticleLink()" aria-label="Copy link">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <span class="copy-toast" id="copy-toast" aria-live="polite">Copied!</span>
+
+        <!-- LinkedIn -->
+        <a class="share-btn share-btn--li"
+           href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fthetenthfloor.com%2Fopinions%2Fkimchi.html"
+           target="_blank" rel="noopener"
+           aria-label="Share on LinkedIn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.7"/>
+            <path d="M7 17v-7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <circle cx="7" cy="7.5" r="0.8" fill="currentColor"/>
+            <path d="M11 17v-4a3 3 0 0 1 6 0v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11 10v7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CTA ============================================== -->
+  <section class="contact-block" id="contact">
+    <div class="contact-block__inner">
+      <div class="reveal">
+        <div class="eyebrow" style="color:rgba(255,255,255,.7);">Direct line</div>
+        <h2 class="display-lg mt-2">The Leadership Team Is Taking Meetings</h2>
+        <p class="contact-block__deck">No pitch. No proposal. A conversation about the real question underneath the problem.</p>
+      </div>
+      <div class="mt-5 reveal">
+        <a href="https://calendar.app.google/p3SDpqn5yT21yfkJ6" target="_blank" rel="noopener" class="btn btn--white btn--lg">Let&#39;s talk <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__pvm">
+      <div>
+        <div class="footer__block-label">Purpose</div>
+        <div class="footer__block-body">To champion human judgment, and to position organisations and the domain leaders within them to lead with conviction as technology advances.</div>
+      </div>
+      <div>
+        <div class="footer__block-label">Promise</div>
+        <div class="footer__block-body">Evidence-backed clarity on what leaders and organisations need to do next, and the conviction to act on it.</div>
+      </div>
+      <div>
+        <div class="footer__block-label">Vision</div>
+        <div class="footer__block-body">To be the definitive firm that domain leaders turn to when they need to claim and hold their competitive advantage as technology reshapes every industry.</div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div>&copy; The Tenth Floor. All rights reserved. &middot; <a href="../privacy-policy.html">Privacy Policy</a></div>
+      <div class="footer__sign-off">Clarity when it matters most.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/site.js" defer></script>
+<script>
+function copyArticleLink() {
+  var url = 'https://hasnahsamidin-cmd.github.io/TTF_website/opinions/kimchi.html';
+  var btn = document.getElementById('copy-link-btn');
+  var toast = document.getElementById('copy-toast');
+  navigator.clipboard.writeText(url).then(function () {
+    btn.classList.add('is-copied');
+    toast.classList.add('is-visible');
+    setTimeout(function () {
+      btn.classList.remove('is-copied');
+      toast.classList.remove('is-visible');
+    }, 2200);
+  });
+}
+</script>
+</body>
+</html>
