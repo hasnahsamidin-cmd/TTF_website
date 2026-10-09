@@ -14,3 +14,7 @@
 /Company/*          /  301
 /DataTraining       /  301
 /DataTraining/*     /  301
+
+# Repo housekeeping files are published with the site root; hide them.
+/README.md          /__not-found         404!
+/LICENSE            /__not-found         404!

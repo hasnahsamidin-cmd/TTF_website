@@ -37,3 +37,10 @@ Route_Sim_July_12.mov
 
 # Node (if ever added)
 node_modules/
+
+# macOS resource forks and unzip leftovers (e.g. copies from external drives)
+._*
+__MACOSX/
+
+# Archives / site backups (would otherwise be publicly downloadable)
+*.zip
