@@ -24,3 +24,9 @@
   for = "/Route_Sim_July_12.mp4"
   [headers.values]
     Cache-Control = "public, max-age=2592000"
+
+# Keep the article authoring template out of search results.
+[[headers]]
+  for = "/opinions/_article-template.html"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
